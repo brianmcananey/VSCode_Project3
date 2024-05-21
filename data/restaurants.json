@@ -1,0 +1,32 @@
+[
+    {
+         "name": "North",
+         "heading": "Modern seafood small plates & more.",
+         "description": "Bookings are available 30 days in advance. By night we offer a selection of seafood small plates served tapas style. We also have a smaller selection of meat & vegetarian dishes alongside cocktails, wine & good music in a casual dining, non formal environment. By day we offer a delicious modern brunch menu. Whilst children are welcome we do not have a children's menu or high chairs. We do not allow dogs in the restaurant, but limited outdoor seating will available soon.",
+         "image_source": "https://i2-prod.chroniclelive.co.uk/incoming/article25767707.ece/ALTERNATES/s810/0_CFR_NJL_151222northfood_03.jpg"
+     },
+    {
+         "name": "SIX",
+         "heading": "Wine, Cheese and Charcutierie",
+         "description": "Wine and cheese lovers are in for a treat with the new addition to Sunderland seafront.A new restaurant and wine lounge has opened on Pier Point, Roker, offering meat and cheese boards, cocktails, wines and more. Six only opened its doors last weekend, but already has a waiting list for peak times with people eager to try out its plates and platters which have a firm focus on local cheeses, charcuterie, seafood, vegetarian options, sides and specials.",
+         "image_source": "https://www.sunderlandecho.com/webimg/b25lY21zOjVkYjVhZTdlLWVkOGMtNGY2Yi1hZTFmLWMxYTIzZmMxYmRmYTplYjNiOGFhNC0zMDc4LTQzMTQtOTNkNC1iYzNjZWY4OWE4ZmE=.jpg"
+     },
+    {
+        "name": "Roker Hotel",
+        "heading": "Afternoon Tea, Bar and Bistro",
+        "description": "We pride ourselves on our amazing cake counter (which is filled with hand crafted patisseries and outrageous freshly made cakes), intimate dining experience, exceptional coffee, exquisite service, and outstanding views. Our head chef also makes an amazing brunch, with the most perfectly poached eggs. So, get yourself along and try it for yourself. Poetic License Bar is the home of small batch gin, amazing cocktails, craft keg beer and soul food. Situated in the Roker Hotel, with amazing sea views, we cater for all dietary requirements, and needs.",
+        "image_source": "https://rokerhotel.co.uk/wp-content/uploads/2020/10/Superior_Room_With_Seaview_Gallery.jpeg"
+    },
+    {
+        "name": "Antico",
+        "heading": "Home of the genuine Italian dining experience",
+        "description": "Here at Antico in Sunderland, we serve the best Italian food, with an authentic Italian experience! We serve the most delicious selection of pizzas, freshest pasta dishes and indulgent desserts! So let us know if you need something different and we will work around your needs. Be sure to ask your server for our full vegetarian and vegan options. At Antico, our motto is 'good food, good wine, good times'  we always provide our customers with the most genuine experience and they leave our restaurant feeling satisfied every time!",
+        "image_source": "https://www.anticorestaurant.com/wp-content/uploads/2019/04/anticoroker-e1583158920856.jpg"
+    },
+    {
+        "name": "Fausto",
+        "heading": "Coffee and Company",
+        "description": "Come to this cafe to taste tasty scones, brownies and biscuits. Delicious beer is served - try and enjoy. Here you can drink great latte, tea or fresh juices. The cosy atmosphere of Fausto Coffee makes guests feel relaxed and have a nice time. The staff is pleasant that's what makes this place so good. Spectacular service is something visitors agree upon here. Affordable prices are what you are to pay for your meal. Guests appreciate the chance to enjoy the cute decor.",
+        "image_source": "https://www.baldhiker.com/wp-content/uploads/P7122928.jpg"
+    }
+]

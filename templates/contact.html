@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Contact {% endblock %}
+
+{% block content %}
+
+
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+
+                    <p>If you have visited one of the restaurants, please leave a review! </p>
+               
+                <div class="register" class="form-group floating-label-form-group controls">
+                    <h1>Review</h1>
+                    <form action=""   method ='POST' name="review_form" autocomplete="off">
+                        <label for="username">
+                            <i class="fas fa-user"></i>
+                        </label>
+                        <input type="text" name="username" placeholder="Username" id="username" required>
+                        <label for="restaurant">
+                            <i class="fa-solid fa-burger"></i>
+                        </label>
+                        <input type="text" name="place" placeholder="Restaurant Visited" id="place" required>
+                        <label for="place">
+                            <i class="fa-regular fa-star"></i>
+                        </label>
+                        <input type="text" name="rating" placeholder="Rating out of 5" id="rating" required>
+                        <label for="rating">
+                            <i class="fas fa-envelope"></i>
+                        </label>
+                        <input type="text" name="comments" placeholder="Comments" id="comments" required>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+        
+               
+            </div>
+        </div>
+    <div>
+    
+    <hr>
+   
+{% endblock %}
