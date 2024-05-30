@@ -1,10 +1,14 @@
 <?php
 
+// Show all errors
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 session_start();
 
 if (isset($_SESSION["user_id"])) {
     
-    $mysqli = require __DIR__ . "database.php";
+    $mysqli = require __DIR__ . "templates\database.php";
 
     $sql = "SELECT * FROM user
             WHERE id = {$_SESSION["user_id"]}";
@@ -41,7 +45,7 @@ if (isset($_SESSION["user_id"])) {
 
     <?php else: ?>
 
-        <p><a href="login.php">Log In</a> or <a href="signup.html">Sign Up</a></p>
+        <p><a href="templates\login.html">Log In</a> or <a href="templates\signup.html">Sign Up</a></p>
 
     <?php endif; ?>
 

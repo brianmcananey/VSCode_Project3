@@ -1,5 +1,9 @@
 <?php
 
+// Show all errors
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 if (empty($_POST["name"])) {
     die("Name is required");
 }
@@ -26,7 +30,7 @@ if ($_POST["password"] !== $_POST["password_confirmation"]) {
 
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT );
 
-$mysqli = require __DIR__ . "/database.php";
+$mysqli = require __DIR__ . "templates\database.php";
 
 $sql = "INSERT INTO user (name, email, password_hash)
         VALUES (?, ?, ?)";

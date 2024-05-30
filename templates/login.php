@@ -1,10 +1,14 @@
 <?php
 
+// Show all errors
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $is_invalid = false;
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $mysqli = require __DIR__ . "database.php";
+    $mysqli = require __DIR__ . "templates\database.php";
 
     $sql = sprintf("SELECT * FROM user
                     WHERE email = '%s'",

@@ -1,7 +1,13 @@
 <?php
 
+// Show all errors
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+
+
 $host = "localhost";
-$dbname = "login_db";
+$dbname = "login_msp3";
 $username = "root";
 $password = "";
 

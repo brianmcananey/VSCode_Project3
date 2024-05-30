@@ -30,10 +30,10 @@ def contact():
 
 @app.route('/login', methods =['GET', 'POST'])
 def login():
-    return render_template("" , page_title="Login")
+    return render_template("login.html" , page_title="Login")
  
  
-@app.route('/register', methods =['GET', 'POST'])
+@app.route('/register/', methods =['GET', 'POST'])
 def register():
         return render_template( 'signup.html', page_title="Register to leave a review")
 
