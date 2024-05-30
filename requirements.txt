@@ -1,0 +1,16 @@
+blinker==1.8.2
+click==8.1.7
+colorama==0.4.6
+ExtensionClass==5.1
+Flask==3.0.3
+importlib_metadata==7.1.0
+imports==0.1.4
+itsdangerous==2.2.0
+Jinja2==3.1.4
+MarkupSafe==2.1.5
+Missing==5.0
+Werkzeug==3.0.3
+zipp==3.18.1
+zope.deferredimport==5.0
+zope.interface==6.3
+zope.proxy==5.2
