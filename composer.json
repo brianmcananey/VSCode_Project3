@@ -1,0 +1,8 @@
+{
+    "name": "brian/vs-code_project3",
+    "description": "milestone project 3",
+    "type": "project",
+    "require": {
+        "php": "^8.2"
+    }
+}
