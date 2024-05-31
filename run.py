@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, render_template, request, flash, redirect, url_for, session
+from flask import Flask, render_template, request, flash, redirect, url_for, session, send_from_directory
 
 
 app = Flask(__name__)
@@ -38,6 +38,10 @@ def register():
         return render_template( 'signup.html', page_title="Register to leave a review")
 
 
+@app.route('/templates/process-signup.php', methods=['POST'])
+def process_signup():
+    # This route just returns the static PHP file.
+    return send_from_directory('templates', 'process-signup.php')
 
 # change debug to false before project submit 
 
