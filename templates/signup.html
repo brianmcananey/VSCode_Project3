@@ -9,28 +9,13 @@
     <!-- Main Content -->
     <h1>Sign Up</h1>
 
-    <form action="templates\process-signup.php" method="post" id="signup">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-        </div>
+  <!-- signup.html -->
+        <form action="{{ url_for('register') }}" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
 
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-        </div>
-
-        <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-        </div>
-
-        <div>
-            <label for="password_confirmation">Confirm Password</label>
-            <input type="password" id="password_confirmation" name="password_confirmation">
-        </div>
-
-        <button type="submit" href="templates\process-signup.php">Sign Up</button>
-    </form>
-   
 {% endblock %}

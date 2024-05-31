@@ -34,9 +34,17 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('login') }}">Login</a>
           </li>
+
+            {% if 'username' in session %}
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            <li>Welcome, {{ session['username'] }}!</li>
+            {% else %}
+
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
           </li>
+
+          {% endif %}
         </ul>
       </div>
     </div>
