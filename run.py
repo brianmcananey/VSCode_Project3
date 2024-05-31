@@ -22,7 +22,9 @@ class Message(db.Model):
     name = db.Column(db.String(80), nullable=False)
     content = db.Column(db.String(200), nullable=False)
 
-# Create all tables
+
+
+# Create all tables in the database
 with app.app_context():
     db.create_all()
 
@@ -30,11 +32,13 @@ with app.app_context():
 def index():
     return render_template("index.html")
 
+
 @app.route("/about", methods=["GET", "POST"])
 def about():
     with open("data/restaurants.json", "r") as json_data:
         data = json.load(json_data)
     return render_template("about.html", page_title="About", company=data)
+
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
@@ -47,6 +51,7 @@ def contact():
         flash(f"Thanks {name}, we have received your message!")
         return redirect(url_for('contact'))
     return render_template("contact.html", page_title="Leave a Review")
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -62,6 +67,7 @@ def login():
             flash("Invalid username or password")
     return render_template("login.html", page_title="Login")
 
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
@@ -74,11 +80,13 @@ def register():
         return redirect(url_for('login'))
     return render_template('signup.html', page_title="Register to leave a review")
 
+
 @app.route('/logout')
 def logout():
     session.clear()
     flash("You have been logged out.")
     return redirect(url_for('index'))
+
 
 if __name__ == "__main__":
     app.run(
