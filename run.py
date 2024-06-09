@@ -2,14 +2,15 @@ import os
 import json
 from flask import Flask, render_template, request, flash, redirect, url_for, session
 from flask_sqlalchemy import SQLAlchemy
-from config import Config
-
-app = Flask(__name__)
-app.config.from_object(Config)
 
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("SECRET_KEY")
+app.secret_key = os.environ.get("SECRET_KEY", "secret_flash_key")
+
+
+# Configuring the SQLAlchemy database URI directly
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/login_project3'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
 db = SQLAlchemy(app)
@@ -19,13 +20,13 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(120), nullable=False)
-
+    
 
 class Message(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
     content = db.Column(db.String(200), nullable=False)
-
+    
 
 # Create all tables
 with app.app_context():
@@ -44,7 +45,7 @@ def about():
     return render_template("about.html", page_title="About", company=data)
 
 
-@app.route("/contact", methods=["GET", "POST"])
+@app.route("/contact/", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
         name = request.form.get("name")
@@ -63,8 +64,7 @@ def login():
         username = request.form.get("username")
         password = request.form.get("password")
         try:
-            user = User.query.filter_by(
-                username=username, password=password).first()
+            user = User.query.filter_by(username=username, password=password).first()
             if user:
                 session['username'] = username
                 flash(f"Welcome back, {username}!")
@@ -76,7 +76,7 @@ def login():
     return render_template("login.html", page_title="Login")
 
 
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/register/', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         username = request.form.get("username")
