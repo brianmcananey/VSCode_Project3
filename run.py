@@ -14,7 +14,7 @@ app.config.from_object('config.Config')
 app.secret_key = os.environ.get("SECRET_KEY", "secret_flash_key")
 
 # Configuring the SQLAlchemy database URI directly
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/login_project3'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://p1ph3j3abbb67rqf:n9nkxphi1ju5r5m6@e7qyahb3d90mletd.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/hvjngya6vesbomkx'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initialize the database and migration objects
