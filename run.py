@@ -14,7 +14,8 @@ app.config.from_object('config.Config')
 
 
 # Set secret key for session management
-app.secret_key = os.environ.get("SECRET_KEY", "secret_flash_key", 'JAWSDB_URL')
+app.secret_key = os.environ.get("SECRET_KEY", "secret_flash_key")
+jawsdb_url = os.environ.get("JAWSDB_URL")
 
 
 # Configuring the SQLAlchemy database URI directly
@@ -127,4 +128,4 @@ if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
         port=int(os.environ.get("PORT", "5000")),
-        debug=False)
+        debug=True)
