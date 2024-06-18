@@ -9,7 +9,7 @@ HTML / CSS / Jquery / Python / Jinja2 / Flask / MySQL
 By Brian McAnaney
 
 ![screenshot](documentation/amiresponsive.webp)
-Image from [UI.dev](https://ui.dev/amiresponsive)
+Image from [UI.dev](static/images/UI-screenshot.png)
 
 [View Live Deployment](https://vscode-project3-f58c5e29f527.herokuapp.com/)
 
@@ -72,7 +72,7 @@ To help restuarants in the area gain more custom, to provide users with a place 
 
 ### Typography
 
-I have chose the "Oswald" font as I believe it suits the layout of the website and simple style the website is going for. The back-up font is san-serif.
+I have chose the "sans-serif" font as I believe it suits the layout of the website and simple style the website is going for. The back-up font is Times New Roman.
 
 ### Imagery
 
