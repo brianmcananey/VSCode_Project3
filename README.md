@@ -114,7 +114,7 @@ I have chose the "Oswald" font as I believe it suits the layout of the website a
 
 
 ## Wireframes
-The basic layout of Veg-Centric Recipes was created with [Balsamiq](https://balsamiq.com/).
+The basic layout of Roker Reviews was created with [Balsamiq](https://balsamiq.com/).
 
 
 
@@ -140,10 +140,10 @@ The basic layout of Veg-Centric Recipes was created with [Balsamiq](https://bals
 
 
 
-- **Log In In and Sign Up**
+- **Log In and Sign Up**
     - I added a Sign up Feature so users can provide their own feedback.
 
-    - Users that are Signed Up and Logegd in can leave a review.
+    - Users that are Signed Up and Logged in can leave a review.
 
 
 
@@ -153,9 +153,8 @@ The basic layout of Veg-Centric Recipes was created with [Balsamiq](https://bals
 
 
 ## **DATABASES**
-In this application, I rely on [MySQL](https://mysql.com/) as the primary database management system. MySQL is a flexible database that allows us to store and manage data in a format that seamlessly fits the dynamic nature of our project. It plays a crucial role in storing user information, reviews and other essential data.
+In this application, I rely on [MySQL](https://mysql.com/) as the primary database management system. MySQL is an open sourced database that allows us to store and manage data in a format that seamlessly fits the dynamic nature of our project. It plays a crucial role in storing user information, reviews and other essential data.
 
-The database schema is designed to efficiently handle the storage and retrieval of data, ensuring that users can seamlessly interact with the application. This section provides an insight into how the application leverages MongoDB to perform various operations, including user management, recipe management, and more.
 
 ### CRUD Functionality
 
@@ -317,12 +316,6 @@ Choose the deployment option that best suits your needs and project goals.
 Always follow the steps and ensure that your sensitive information(API Keys, Database credentials, etc) are not visible to the public.
 
 
-## Connecting to MySQL Database
-
-This application uses MySQL as its database. To set up your own MySQL database and configure it for your application, follow these steps:
-
-
-
 ## Credits
 
 ### Content
@@ -348,11 +341,8 @@ This application uses MySQL as its database. To set up your own MySQL database a
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [Heroku](https://heroku.com) To create and Host the Deployed App.
-- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [Canva](https://www.canva.com/) used for meta icon and logo creation.
 - [Balsamiq](https://balsamiq.com/) used to create Wireframes.
 - [Figma](https://www.figma.com/) used to create high fidelity prototypes.
-- [Adobe colour wheel](https://color.adobe.com/) used for selecting colour scheme.
 - [Chat GPT](https://chat.openai.com/) Used for trouble shooting.
 - [Font Awesome](https://fontawesome.com/) For Icons
 - [Google Fonts](https://fonts.google.com/) for all Fonts.
@@ -360,10 +350,8 @@ This application uses MySQL as its database. To set up your own MySQL database a
 - [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Used to validate CSS.
 - [JSHint](https://jshint.com/) Used to validate JQuery.
 - [CodeInstitute Python Linter](https://pep8ci.herokuapp.com/) Used to Check Python for PEP-8 Compliance.
-- [WAVE](https://wave.webaim.org/) Used to check accesability.
-- [Responsinator](http://www.responsinator.com/) Used to check responsiveness.
 - [UI.dev](https://ui.dev/amiresponsive) Used to create am I responsive image.
-- [Pytest](https://pypi.org/project/pytest/) Used for Python unit testing.
+
 
 
 ### Acknowledgements
