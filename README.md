@@ -119,6 +119,8 @@ I have chose the "sans-serif" font as I believe it suits the layout of the websi
 ## Wireframes
 The basic layout of Roker Reviews was created with [Balsamiq](https://balsamiq.com/).
 
+![Wireframes](static/images/wireframes.png)
+
 
 
 ## Features
@@ -363,4 +365,4 @@ Always follow the steps and ensure that your sensitive information(API Keys, Dat
 - I would like to thank Ben Smith and Pascal Fasulo from City of Bristol College for his ongoing support.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the great advice.
-- I would like to thank freinds for there on going support and reviewing of the Web App.
+- I would like to thank friends and family for there on going support and reviewing of the Web App.
