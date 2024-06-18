@@ -105,7 +105,7 @@ I also personally tested the website on Samsung Galaxy S22, Samsung Chrome book,
 
 ### CSS <!-- omit in toc -->
 
-![CSS Validation]()
+![CSS Validation](static/images/css-validation.png)
 
 - All pages passed the W3C CSS Validation.
 
@@ -113,14 +113,19 @@ I also personally tested the website on Samsung Galaxy S22, Samsung Chrome book,
 
 All website pages were tested using the A11y Color Contrast Accessibility Checker and no automated colour contrast issues were found.
 
-![a11y Color Validation]()
+![a11y Color Validation](static/images/a11y-validator.png)
 
 ## JavaScript Testing <!-- omit in toc -->
 
-* I also ran both JS files through JSHint to make sure it was thoroughly tested.
- ![JSHint Testing](assets/images/js_test.png)
- ![JSHint Testing](assets/images/js-test2.png)
 - Throughout development I used console logs to test that the functions worked as intended.
+
+## Python Testing <!-- omit in toc -->
+
+- Throughout I tested in the terminal.
+
+![Python Terminal](static/images/terminal-debug.png)
+
+- 
 
 
 # Peer Review
