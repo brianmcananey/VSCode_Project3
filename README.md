@@ -8,8 +8,8 @@ HTML / CSS / Jquery / Python / Jinja2 / Flask / MySQL
 
 By Brian McAnaney
 
-![screenshot](documentation/amiresponsive.webp)
-Image from [UI.dev](static/images/UI-screenshot.png)
+![screenshot](static/images/UI-screenshot.png)
+Image from [UI.dev]()
 
 [View Live Deployment](https://vscode-project3-f58c5e29f527.herokuapp.com/)
 
