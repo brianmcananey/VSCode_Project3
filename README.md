@@ -1,17 +1,17 @@
-# [Roker Reviews]()
+# [Roker Reviews](https://vscode-project3-f58c5e29f527.herokuapp.com/)
 
- A responsive web application for Users to view and share Restuarant Reviews.
+ A responsive web application for Users to view and share Restaurant Reviews.
 
 **Code Intstitute - Milestone Project 3**
 
-HTML / CSS / Jquery / Python / Jinja2 / Flask / MySQl 
+HTML / CSS / Jquery / Python / Jinja2 / Flask / MySQL
 
 By Brian McAnaney
 
 ![screenshot](documentation/amiresponsive.webp)
 Image from [UI.dev](https://ui.dev/amiresponsive)
 
-[View Live Deployment]()
+[View Live Deployment](https://vscode-project3-f58c5e29f527.herokuapp.com/)
 
 ## Strategy
 
@@ -19,7 +19,7 @@ Image from [UI.dev](https://ui.dev/amiresponsive)
 
 - **Purpose of the website?**
 
-    Provide a diverse and unbiased collections of restuarnt reviews to help people decide where to go.
+    Provide a diverse and unbiased collections of restuarant reviews to help people decide where to go.
 
 - **Target audience?**
 
@@ -31,17 +31,16 @@ Image from [UI.dev](https://ui.dev/amiresponsive)
 
     * Recommendations: each user to encouraged to provide honest feedback to help with recommendations.
 
-    * Community and Connection: We foster a vibrant and supportive community where users can connect with like-minded individuals, share their culinary experiences, and exchange ideas for places to visit.
+    * Community and Connection: Helps connect like-minded individuals, share their experiences, and exchange ideas for places to visit.
 
 - **What makes a good experience ?**
 
-    * User-Friendly Interface: A well-designed and intuitive interface that is easy to navigate, ensuring that users can find and upload recipes.
+    * User-Friendly Interface: A well-designed and intuitive interface that is easy to navigate, ensuring that users can find and upload reviews.
 
     * Responsive Design: A website that adapts seamlessly to various devices and screen sizes, ensuring a consistent and enjoyable experience whether users are on desktop, tablet, or mobile.
 
     * Accessibility: Ensuring that the website is accessible to users with disabilities, including features like alt text for images and keyboard navigation.
 
-    * Community Engagement: A vibrant and active community where users can share their own thoughts and opinions.
 
 - **What we shouldn't do?**
 
@@ -59,11 +58,13 @@ To help restuarants in the area gain more custom, to provide users with a place 
 
 - Expand our user base to build a thriving community.
 
-- Gain revenue streams through advertising opportunities and affiliate marketing partnerships, enabling us to continue offering valuable resources and content to our users.
+- Gain revenue streams through advertising.
+
+- Encourage more custom to the area.
 
 ## UX
 ### Color Scheme
-![Mock-up](documentation/colorpallete.webp)
+
     
 
 ### Typography
@@ -74,7 +75,7 @@ I have chose the "Oswald" font as I believe it suits the layout of the website a
 
 * Imagery is very important to the website as the site needs to show off the area the restaurants are in and be appealing for people to come and visit.
 
-* The pages will be consistent with the same large hero image displayed over the contents of 2 pages. They will also have the same navbar and footer.
+* The pages will be consistent with the same large hero image displayed over the contents of the pages. They will also have the same navbar and footer.
 
 ### Icons
 
@@ -84,7 +85,7 @@ I have chose the "Oswald" font as I believe it suits the layout of the website a
 
 ### Information Architecture
 
-* I used a similar layout to the Thorin and Company example in the Code Institute course as I believed it would suit the layout of my hero image and website as a whole, to fit in a page for the gallery and sign up page. The website has a Homepage, then 4 further pages; a About page, a Sign Up page, Log in page and a Contact page.
+* I used a similar layout to the Thorin and Company example in the Code Institute course as I believed it would suit the layout of my hero image and website as a whole. The website has a Homepage, then 4 further pages; a About page, a Sign Up page, Log in page and a Contact page. It will also have a logout function.
   - Homepage - Large hero image showing a view of the area. It will also show a selection of customer reviews.
   - About Page - This will show images and descriptions of different restuarants in the area.
   - Sign Up - Same large hero image as the homepage but will also have a form on to sign up to the site.
@@ -95,34 +96,20 @@ I have chose the "Oswald" font as I believe it suits the layout of the website a
 
 - **First-Time User Goals**
 
-    - Enjoy a User-Friendly Experience: A user-friendly interface and navigation system that allows users to easily explore the website and discover recipes and resources.
+    - Enjoy a User-Friendly Experience: A user-friendly interface and navigation system that allows users to easily explore the website and discover reviews and resources.
 
-     - Browse Veg-Centric Recipes: Users will want to discover simple and time-efficient vegetable-based recipes for their meals.
-
-    - Join the community: A User may want to join the community and share their own recipes
-
-    - Find information about Veg-Centric.
 
 - **Returning User Goals**
 
-    - Contribute to the Community: Enable returning users to actively contribute to the community by sharing their own veg-centric recipes.
+    - Contribute to the Community: Enable returning users to actively contribute to the community by sharing their own honest feedback.
 
-    - Save Favorite Recipes: Allow users to save their favorite veg-centric recipes to their profile for easy access on return visits.
-
-    - To be able to view, edit and Delete their uploaded recipes.
-
-    - To have a page with user information with the option to update.
+    - Review: Write honest reviews of where they have been to help other users.
 
 - **Website Owner Goals**
+   
+    - Revenue: Create a revenue stresam throuogh possible advertising.
 
-    - Edit all Recipes to ensure content quality.
-
-    - Edit recipe images for aesthetical purposes.
-
-    - The ability to add Categories.
-
-    - Generate revenue Through Affiliate Marketing.
-
+    - Community: Help the community to entice more custom in the area.
 
 
 
@@ -136,9 +123,7 @@ The basic layout of Veg-Centric Recipes was created with [Balsamiq](https://bals
 ### Existing Features
 
  - **Navigation Bar**
-    - The navigation bar is a central feature that enhances the user experience by providing easy access to key functionalities and content within Veg-Centric.  Whether on a desktop or a mobile device, users can seamlessly navigate through the application with the help of this feature.
-
-    - The Nav Bar consist of: The Brand Logo which when clicked directs the user to the homepage, Top bar Navigation for larger screens and Dropdown Nav for Mobile decvices.
+    - The navigation bar is a central feature that enhances the user experience by providing easy access to key functionalities and content.  Whether on a desktop or a mobile device, users can seamlessly navigate through the application with the help of this feature.
 
     -  Depending on the user's role and session status, the Nav Bar & Dropdown provide a set of relevant links for easy navigation
 
@@ -147,50 +132,23 @@ The basic layout of Veg-Centric Recipes was created with [Balsamiq](https://bals
 ![screenshot](documentation/navigation.webp)
 
  - **Footer Bar**
-    - The footer bar is a key component of Veg-Centric, designed to enhance user engagement, transparency, and accessibility. It appears at the bottom of every page and contains valuable information and links to various resources.
-
-    - The Join our community section:  This is a a strategically placed text to entice users to join the community
-
-    - The contact us section: This section offers the user the option to get in contact via either email or facebook with icons for links.
-
-    - The Developer information section: Here you can find important information behind Veg-Centric, Including icon links to the GitHub Repo and the developers LinkedIn Page.
-
-    - The footer was created with [Materialize](https://materializecss.com/)
+  - The Footer includes the social media links for the website.
+  - Social media links open in a new page.
+  - The Footer remains consistent on all pages.
 
 ![screenshot](documentation/footer.webp)
 
 
 
-- **Sign In and Sign Up**
-    - I added a Sign up Feature so users can join the community and upload their own recipes and save other user's recipes to their favorites.
+- **Log In In and Sign Up**
+    - I added a Sign up Feature so users can provide their own feedback.
 
-    - The User is notified that by signing up they agree to the terms and conditions and privacy policy which can be viewed via the linked text which opens a modal to display the information.
+    - Users that are Signed Up and Logegd in can leave a review.
 
-    - Users that are signed Up and Signed in are able to save favourite recipes aswell as edit and delete their own recipes.
-
-    - The Sign in and sign up forms are displayed on [Materialize](https://materializecss.com/) Cards.
-
-![screenshot](documentation/signinup.webp)
-![screenshot](documentation/signin.webp)
 
 
 - **About Page**
-    - The About page in the project provides users with a comprehensive overview of Veg-Centric Recipes. It introduces the project's mission, highlights the significance of a veg-centric lifestyle, and delves into the vibrant community that makes this project unique. Additionally, links are provided to our Terms and Conditions and Privacy Policy for users to reference. This page aims to give users a clear understanding of what Veg-Centric Recipes is all about and how they can get involved.
-
-    - The "About" details are displayed on [Materialize](https://materializecss.com/) Card.
-
-![mockup](documentation/about.webp)
-
-- **Facebook Page**
-  The design seamlessly integrates with the official Facebook page, enhancing user engagement and keeping users connected:
-
-    - Community Connection: Join our culinary community for updates, discussions, and like-minded connections.
-
-    - Real-Time Updates: Stay in the loop with the latest platform news, events, and culinary trends.
-
-    - User Engagement: Engage with our community through interactive posts and discussions.
-
-    ![screenshot](documentation/fbpage.webp)
+    - The About page provides a list of different restuarants you could visit in the area, these could be added to in future and maybe provide direct links to each individual business.
 
 
 
@@ -203,11 +161,9 @@ The database schema is designed to efficiently handle the storage and retrieval 
 
 - **User Management:**
 1. **Create User (C):**
-    - Function: 'sign_up'
    - Description: Allows users to register by providing necessary information. Includes checks for:
      - Matching passwords
      - Existing username
-     - Existing email
 
     - HTTP Method: POST
 
@@ -233,16 +189,14 @@ The database schema is designed to efficiently handle the storage and retrieval 
 
     - Database Operation: Calls authenticate_user to validate user credentials.
 
-3. **Sign Out:**
-    - Function: 'sign_out'
-
-    - Description: Allows users to sign out of their accounts.
+3. **Log Out:**
+    - Description: Allows users to log out of their accounts.
 
     - HTTP Method: GET
 
     - Database Operation: N/A 
 
-    The sign out function works by removing the users session cookie.
+    The log out function works by removing the users session cookie (session.clear).
 
 
 ## **TESTING**
@@ -413,7 +367,7 @@ This application uses MySQL as its database. To set up your own MySQL database a
 
 
 ### Acknowledgements
-- I would like to thank BEn Smith and Pascal Fasulo from City of Bristol College for his ongoing support.
+- I would like to thank Ben Smith and Pascal Fasulo from City of Bristol College for his ongoing support.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the great advice.
 - I would like to thank freinds for there on going support and reviewing of the Web App.
