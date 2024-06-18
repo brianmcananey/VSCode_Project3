@@ -65,6 +65,9 @@ To help restuarants in the area gain more custom, to provide users with a place 
 ## UX
 ### Color Scheme
 
+- here are the colors chosen, I believe they have a good contrast to the hero image and background colors.
+
+![screenshot](static/images/colors.png)
     
 
 ### Typography
@@ -129,14 +132,16 @@ The basic layout of Roker Reviews was created with [Balsamiq](https://balsamiq.c
 
     - The Naviagtion bar was created with [Materialize](https://materializecss.com/)
 
-![screenshot](documentation/navigation.webp)
+![Desktop Navbar](static/images/desktop-navbar.png)
+
+![Mobile Navbar](static/images/mobile-navbar.png)
 
  - **Footer Bar**
   - The Footer includes the social media links for the website.
   - Social media links open in a new page.
   - The Footer remains consistent on all pages.
 
-![screenshot](documentation/footer.webp)
+![Footer](static/images/footer.png)
 
 
 

@@ -125,7 +125,9 @@ All website pages were tested using the A11y Color Contrast Accessibility Checke
 
 ![Python Terminal](static/images/terminal-debug.png)
 
-- 
+- I valdated my python through the Code Institute Python Linter
+
+![CI Python Linter](static/images/python-testing.png)
 
 
 # Peer Review
@@ -140,3 +142,4 @@ It was suggested that I could add additional features to the site, which include
 - Styling of the Navbar when logged in isn't as good as it should be, need to improve the css for "logout"
 - The performance level of the About page needs improving to speed up loading time. This can be fixed at a later date as I did not have time.
 - Add extra security in the form of a confirm password on the sign up page.
+- Need to fix the styling of the Footer as one icon doesnt render properly.

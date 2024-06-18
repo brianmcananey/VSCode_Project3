@@ -1,6 +1,7 @@
 import os
 import json
-from flask import Flask, render_template, request, flash, redirect, url_for, session
+from flask import (
+        Flask, render_template, request, flash, redirect, url_for, session)
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -19,7 +20,11 @@ jawsdb_url = os.environ.get("JAWSDB_URL")
 
 
 # Configuring the SQLAlchemy database URI directly
-app.config['SQLALCHEMY_DATABASE_URI'] ='mysql://p1ph3j3abbb67rqf:n9nkxphi1ju5r5m6@e7qyahb3d90mletd.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/hvjngya6vesbomkx'
+app.config['SQLALCHEMY_DATABASE_URI'] = (
+    'mysql://p1ph3j3abbb67rqf:n9nkxphi1ju5r5m6@'
+    'e7qyahb3d90mletd.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/'
+    'hvjngya6vesbomkx'
+)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
@@ -35,7 +40,7 @@ class Message(db.Model):
     place = db.Column(db.String(200), nullable=False)
     rating = db.Column(db.Integer, nullable=False)
     comments = db.Column(db.Text, nullable=False)
-    
+
 
 # Define the User model
 class User(db.Model):
@@ -59,9 +64,8 @@ def index():
 def about():
     with open("data/restaurants.json", "r") as json_data:
         data = json.load(json_data)
-    return render_template(
-        "about.html", page_title="About", company=data)
-    
+    return render_template("about.html", page_title="About", company=data)
+
 
 @app.route("/contact/", methods=["GET", "POST"])
 def contact():
@@ -70,16 +74,16 @@ def contact():
         place = request.form.get("place")
         rating = request.form.get("rating")
         comments = request.form.get("comments")
-        
+
         new_message = Message(
-            name=name, place=place, rating=rating, comments=comments)
+            name=name, place=place, rating=rating, comments=comments
+        )
         db.session.add(new_message)
         db.session.commit()
-        
-        flash(
-            f"Thanks {name}, we have received your review for {place}!")
+
+        flash(f"Thanks {name}, we have received your review for {place}!")
         return redirect(url_for('contact'))
-    
+
     return render_template("contact.html", page_title="Leave a Review")
 
 
@@ -90,7 +94,8 @@ def login():
         password = request.form.get("password")
         try:
             user = User.query.filter_by(
-                username=username, password=password).first()
+                username=username, password=password
+            ).first()
             if user:
                 session['username'] = username
                 flash(f"Welcome back, {username}!")
@@ -112,8 +117,9 @@ def register():
         db.session.commit()
         flash(f"Account created for {username}!")
         return redirect(url_for('login'))
-    return render_template('signup.html', 
-                           page_title="Register to leave a review")
+    return render_template(
+        'signup.html', page_title="Register to leave a review"
+    )
 
 
 @app.route('/logout')
@@ -127,4 +133,5 @@ if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
         port=int(os.environ.get("PORT", "5000")),
-        debug=False)
+        debug=False
+    )
