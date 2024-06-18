@@ -207,7 +207,7 @@ In this application, I rely on [MySQL](https://mysql.com/) as the primary databa
 
 ## **TESTING**
 
-For the documentation of all testing,Please see [TESTING.md](TESTING.md) 
+For the documentation of all testing,Please see [TESTING.md](Testing.md) 
 
 ## DEPLOYMENT
 ### Local Deployment

@@ -92,16 +92,16 @@ I also personally tested the website on Samsung Galaxy S22, Samsung Chrome book,
 |Sign Up|![Sign Up Lighthouse testing](static/images/signup-lighthouse.png)|Similar results to the Index page, page is loading well.|
 |Log In|![Log In Lighthouse testing](static/images/login-lighthouse.png)|Similar results to the Index page and Sign up page, page is loading well.|
 |Contact|![Contact Page Lighthouse testing](static/images/contact-lighthouse.png)|Similar results to the Index page and Sign up page, page is loading well.|
-|Mobile|![Mobile Lighthouse testing](static/images/mobile-lighthouse.png)|The didnt perform as well as the desktop testing, need to review image sizes and loading times to improve the performance.|
+|Mobile|![Mobile Lighthouse testing](static/images/mobile-lighthouse.png)|This didn't perform as well as the desktop testing, need to review image sizes and loading times to improve the performance.|
 
 
 ### HTML and CSS Validation <!-- omit in toc -->
 
-### HTML <!-- omit in toc -->
+### HTML 
 
-![HTML Validation]()
+![HTML Validation](static/images/w3c-html.png)
 
-- All of the HTML pages passed the W3C HTML Validator.
+- All of the HTML pages passed the validator bar a warning on the h1 header. It recomends not to use h1 unless it is a heading, however I believed it looked better aesthetically this way so left it as it is.
 
 ### CSS <!-- omit in toc -->
 
@@ -143,3 +143,5 @@ It was suggested that I could add additional features to the site, which include
 - The performance level of the About page needs improving to speed up loading time. This can be fixed at a later date as I did not have time.
 - Add extra security in the form of a confirm password on the sign up page.
 - Need to fix the styling of the Footer as one icon doesnt render properly.
+- Need to change to h1 to pass all w3c html validation checks.
+- In future I could render the information submitted in the contact forms straight in to the review boxes on the home page.
